@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300&family=Open+Sans&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="nav-link" href="#about">About me</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#contacts">Contacts</a>
+            <a class="nav-link" href="#home">Home</a>
+        </nav>
+        <img onclick="document.getElementById('hamburger').style.display = 'flex';" class="hamburger-icon" src="hamburger.png" width="60" height="60" alt="hamburger">
+        <div class="hamburger" id="hamburger">
+            <img onclick="document.getElementById('hamburger').style.display = 'none';" src="cross.png" alt="cross" width="60" height="60">
+            <div>
+                <a href="#about">About me</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contacts">Contacts</a>
+            </div>
+        </div>
+    </header>
+    <section id="home">
+        <h1>Andrey Dementev,<br>Full-stack developer</h1>
+    </section>
+    <section id="about">
+        <div>
+            <img src="image.jpg" alt="photo">
+            <img src="person.jpg" alt="photo">
+        </div>
+        <div class="about-text">
+            <h2>About me</h2><br>
+            <p>Hi, I'm Andrey Dementev. I've been a junior full-stack developer for 11 months now.</p>
+            <p>For me, programming is not just a job, it's a hobby.</p>
+            <p>I'm open to new knowledge, I like to study new technologies and apply them in practice</p>
+            <p><b>Skills:</b> HTML, CSS, JS, Python, Java, Git</p>
+        </div>
+    </section>
+    <section id="portfolio">
+        <h2 class="portfolio-header">Portfolio</h2>
+        <div class="portfolio-flex">
+            <div class="portfolio-flex-item">
+                <img src="project1.png" alt="project" id="portfolio-img1">
+                <p class="portfolio-flex-item-header">Flashcards</p>
+                <button onclick="onProject1AboutClick()" class="open-window">About</button>
+                <div class="window" id="window1">
+                    <div class="inner-window">
+                        <h2>Flashcards</h2>
+                        <p>You can see the project at the following link: <a href="https://andreydem0505.github.io/Flashcards/" target="_blank">flashcards</a>.</p>
+                        <p>I did this project when I was studying frontend on HyperSkill. I created a web page with flip-down flash cards, learned some HTML basics and learned that CSS can easily make a beautiful design.</p>
+                        <button onclick="onProject1CloseClick()">Close</button>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-flex-item">
+                <img src="project2.png" alt="project" id="portfolio-img2">
+                <p class="portfolio-flex-item-header">Virtual Piano</p>
+                <button onclick="onProject2AboutClick()" class="open-window">About</button>
+                <div class="window" id="window2">
+                    <div class="inner-window">
+                        <h2>Virtual Piano</h2>
+                        <p>You can see the project at the following link: <a href="https://andreydem0505.github.io/Virtual-Piano/" target="_blank">Piano</a>.</p>
+                        <p>I did this project when I was studying frontend on HyperSkill. I created a web page with virtual piano, improved my knowledge of JS and CSS.</p>
+                        <button onclick="onProject2CloseClick()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacts">
+        <h2>Contacts</h2>
+        <div class="contacts-text">
+            <p>You can contact me at <a href="mailto:andreydem42@gmail.com">andreydem42@gmail.com</a></p>
+            <p>or phone number - <a href="tel:+79507788171">+79507788171</a></p>
+        </div>
+        <div class="contact-image"><a href="https://github.com/andreydem0505" target="_blank"><img src="github.svg" alt="github"></a></div>
+        <div class="contact-image"><a href="https://www.instagram.com/andreydementev14" target="_blank"><img src="instagram.svg" alt="instagram"></a></div>
+    </section>
+    <footer>
+        <h2>Andrey Dementev</h2>
+        <p>2021</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
