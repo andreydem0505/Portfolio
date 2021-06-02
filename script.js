@@ -8,26 +8,22 @@ function closeClick(div, img) {
     img.style.opacity = "1";
 }
 
-function onProject1AboutClick() {
-    let div = document.getElementById("window1");
-    let img = document.getElementById("portfolio-img1");
+function onProjectAboutClick(value) {
+    let div = document.getElementById("window"+value);
+    let img = document.getElementById("portfolio-img"+value);
     aboutClick(div, img);
 }
 
-function onProject1CloseClick() {
-    let div = document.getElementById("window1");
-    let img = document.getElementById("portfolio-img1");
+function onProjectCloseClick(value) {
+    let div = document.getElementById("window"+value);
+    let img = document.getElementById("portfolio-img"+value);
     closeClick(div, img);
 }
 
-function onProject2AboutClick() {
-    let div = document.getElementById("window2");
-    let img = document.getElementById("portfolio-img2");
-    aboutClick(div, img);
+function showHamburger() {
+    document.getElementById('hamburger').style.display = 'flex';
 }
 
-function onProject2CloseClick() {
-    let div = document.getElementById("window2");
-    let img = document.getElementById("portfolio-img2");
-    closeClick(div, img);
+function hideHamburger() {
+    document.getElementById('hamburger').style.display = 'none';
 }

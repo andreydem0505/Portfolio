@@ -21,6 +21,10 @@ a {
     text-decoration: none;
 }
 
+h2 {
+    font-family: 'Playfair Display SC', serif;
+}
+
 .nav-link {
     padding: 1.5rem 1.5rem;
     text-transform: uppercase;
@@ -111,10 +115,12 @@ img[src="person.jpg"] {
 .portfolio-flex {
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .portfolio-flex-item {
-    width: 40%;
+    width: 45%;
     margin: 0 10px;
     position: relative;
 }
@@ -127,14 +133,42 @@ img[src="person.jpg"] {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
-    transform: translateY(-2em);
 }
 
 .portfolio-header {
-    font-family: 'Playfair Display SC', serif;
     text-align: center;
     padding-top: 2em;
     padding-bottom: 1em;
+}
+
+#backend-header {
+    text-align: center;
+    padding-top: 1em;
+}
+
+#backend-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#backend-images {
+    margin: 0 60px;
+}
+
+.backend-image {
+    display: inline-block;
+    align-self: center;
+    padding: 30px 50px;
+}
+
+#backend-text {
+    text-align: center;
+    font-size: 1.3rem;
+    padding-bottom: 2em;
+    width: 40%;
+    margin: 0 auto;
 }
 
 #contacts {
@@ -142,12 +176,9 @@ img[src="person.jpg"] {
     padding: 2em 0;
 }
 
-#contacts h2 {
-    font-family: 'Playfair Display SC', serif;
-}
-
 .contacts-text {
     padding: 1em 0;
+    font-size: 1.2em;
 }
 
 .contact-image {
@@ -163,7 +194,6 @@ footer {
 }
 
 footer h2 {
-    font-family: 'Playfair Display SC', serif;
     font-weight: 100;
 }
 
@@ -186,7 +216,7 @@ footer h2 {
     position: absolute;
     display: none;
     justify-content: center;
-    top: 10%;
+    top: 5%;
     width: 100%;
     text-align: center;
 }
@@ -278,6 +308,15 @@ footer h2 {
         width: 100%;
     }
 
+    #backend-header {
+        font-size: 3em;
+    }
+
+    #backend-text {
+        font-size: 3em;
+        width: 80%;
+    }
+
     .open-window {
         font-size: 2em;
         transform: translateY(-5em);
@@ -288,7 +327,7 @@ footer h2 {
     }
 
     .inner-window {
-        font-size: x-large;
+        font-size: 2em;
     }
 
     .inner-window button {
@@ -305,5 +344,10 @@ footer h2 {
 
     footer {
         font-size: 2em;
+    }
+
+    .contact-image img {
+        width: 100px;
+        padding: 20px;
     }
 }
