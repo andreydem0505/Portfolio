@@ -141,7 +141,11 @@ img[src="person.jpg"] {
     padding-bottom: 1em;
 }
 
-#backend-header {
+#backend {
+    margin: 50px 0;
+}
+
+.other-header {
     text-align: center;
     padding-top: 1em;
 }
@@ -308,7 +312,7 @@ footer h2 {
         width: 100%;
     }
 
-    #backend-header {
+    .other-header {
         font-size: 3em;
     }
 

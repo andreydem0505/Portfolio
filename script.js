@@ -27,3 +27,9 @@ function showHamburger() {
 function hideHamburger() {
     document.getElementById('hamburger').style.display = 'none';
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    let date = new Date();
+    let months = ((date.getFullYear() - 2020) * 12 + date.getMonth() + 1).toString();
+    document.getElementById("months").innerText = months;
+});
